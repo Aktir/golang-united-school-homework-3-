@@ -1,9 +1,16 @@
 package homework
 
 func average(input [15]float32) (result float32) {
-	input = [15]float32{1, 2, 3, 4, 5, 6}
+	items := 0
+	for _, v := range input {
+		if v != 0.0 {
+			items += 1
+		}
+
+	}
+
 	var sum float32
-	N := 6
+	N := items
 	for i := 0; i <= N; i++ {
 		sum += input[i]
 	}

@@ -11,7 +11,7 @@ func average(input [15]float32) (result float32) {
 
 	var sum float32
 	N := items
-	for i := 0; i <= N; i++ {
+	for i := 0; i < N; i++ {
 		sum += input[i]
 	}
 	return (sum) / (float32(N))
